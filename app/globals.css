@@ -51,55 +51,32 @@ body {
 .no-result-text {
   @apply w-full text-center my-10 px-2;
 }
-
-/* Project Details */
-.user-actions_section {
-  @apply fixed max-md:hidden flex gap-4 flex-col right-10 top-20;
+/* START: Hero styles */
+.hero {
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
 }
 
-.user-info {
-  @apply flex flex-wrap whitespace-nowrap text-sm font-normal gap-2 w-full;
+.hero__title {
+  @apply 2xl:text-[52px] sm:text-[44px] text-[40px] font-extrabold;
 }
 
-/* Home */
-.projects-grid {
-  @apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-10 w-full;
+.hero__subtitle {
+  @apply text-[20px] text-black-100 font-light mt-5;
 }
 
-/* Project Actions */
-.edit-action_btn {
-  @apply p-3 text-gray-100 bg-light-white-400 rounded-lg text-sm font-medium;
+.hero__image-container {
+  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
 }
 
-.delete-action_btn {
-  @apply p-3 text-gray-100 hover:bg-red-600 rounded-lg text-sm font-medium;
+.hero__image {
+  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
 }
 
-/* Related Project Card */
-.related_project-card {
-  @apply flex-col rounded-2xl min-w-[210px] min-h-[197px];
-}
+/* END: Hero styles */
 
-.related_project-card_title {
-  @apply justify-end items-end w-full h-1/3 bg-gradient-to-b from-transparent to-black/50 rounded-b-2xl gap-2 absolute bottom-0 right-0 font-semibold text-lg text-white p-4;
-}
 
-.related_projects-grid {
-  @apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-5;
-}
 
-/* Custom Menu */
-.custom_menu-btn {
-  @apply gap-4 w-full rounded-md bg-light-white-100 p-4 text-base outline-none capitalize;
-}
 
-.custom_menu-items {
-  @apply flex-col absolute left-0 mt-2 xs:min-w-[300px] w-fit max-h-64 origin-top-right rounded-xl bg-white border border-nav-border shadow-menu overflow-y-auto;
-}
-
-.custom_menu-item {
-  @apply text-left w-full px-5 py-2 text-sm hover:bg-light-white-100 self-start whitespace-nowrap capitalize;
-}
 
 /* Footer */
 .footer {
